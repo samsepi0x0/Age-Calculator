@@ -5,9 +5,9 @@ function calc() {
     var month = document.getElementById("month").value - 1;
     var year = document.getElementById("year").value;
 
-    if(date <= 0 || date >= 32 || month < 0 || month > 11 || year < 1600){
+    if(date <= 0 || date >= 32 || month < 0 || month > 11 || typeof(date) != "number" || typeof(month) != "number" || typeof(year) != "number"){
         document.getElementById('result').innerHTML = "The date doesn't seem right... does it?";
-    } else if(month == 1 && date >= 29){
+    } else if(month == 1 && date > 29){
         document.getElementById('result').innerHTML = "This is just insane. Are you nuts?";
         return true;
     } else {
@@ -18,7 +18,7 @@ function calc() {
 
         let result = Math.floor((date2.getTime() - date1.getTime()) / day );
         if(result < 0){
-            document.getElementById('result').innerHTML = "This calculates age, read and then use.";
+            document.getElementById('result').innerHTML = "This day has not yet occured.";
         } else {
             document.getElementById('result').innerHTML = result + " days.";
         }
