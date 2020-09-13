@@ -7,7 +7,6 @@ function calc() {
 
     if(date <= 0 || date >= 32 || month < 0 || month > 11){
         document.getElementById('result').innerHTML = "The date doesn't seem right... does it?";
-        console.log("wtf");
     } else if(month == 1 && date > 29){
         document.getElementById('result').innerHTML = "This is just insane. Are you nuts?";
         return true;
