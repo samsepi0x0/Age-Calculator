@@ -1,0 +1,19 @@
+#headings{
+    text-align: center;
+}
+.flex-box-0 {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.flex-box-1 {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex-box div {
+    padding: 10px;
+    align-items: center;
+}

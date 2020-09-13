@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Project 01</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h2 id="headings"><u> Age Calculator </u></h2>
+        <br>
+        <div class="flex-box-0">
+            <form id="values">
+                <input type="number" name="date" placeholder="Date" size=5 id="date">
+                <input type="number" name="month" placeholder="Month" size=6 id="month">
+                <input type="number" name="year" placeholder="Year" size=5 id="year">
+            </form>
+        </div>
+        <div class="flex-box-1">
+            <div>
+                <button class="btn btn-primary" onclick="calc()">
+                    Calculate
+                </button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">
+                    Reset
+                </button>
+            </div>
+        </div>
+        <div class="flex-box-1">
+            <h4 id="result">
+
+            </h4>
+        </div>
+    </div>
+</body>
+</html>
