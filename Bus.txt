@@ -1,0 +1,18 @@
+class name - Bus
+data members - 
+    capacity(int)
+    nop(int)
+member functions - 
+    Bus() - cap = 30
+    Bus(int) - cap = int
+    changeCapacity(int) - cap = int
+    board(int) - passangers increase ; nop !> cap
+    unboard(int) - reduce that no. from number of passangers; int !> nop
+    printStatus() - print nop & cap-nop
+
+Write a menu driven program using class Bus to showcase following menu elements:
+    1. Start the journey
+    2. change capacity
+    3. board the Bus
+    4. deboard from the Bus
+    5. exit
